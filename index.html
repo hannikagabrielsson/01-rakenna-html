@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+  
+    <script>
+        const runko = document.body;
+        const osa1 = document.createElement("header");
+        osa1.className = "ylatunniste";
+        runko.prepend(osa1);
+
+        const otsikko = document.createElement("h1");
+        otsikko.textContent = "Tämä on artikkelin otsikko";
+        osa1.prepend(otsikko);
+
+        const kappale1 = document.createElement("p");
+        kappale1.textContent = "Ensimmäinen kappale. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus impedit consequuntur inventore culpa, beatae tempora!";
+        osa1.appendChild(kappale1);
+
+        const osa2 = document.createElement("section");
+        runko.appendChild(osa2);
+        osa2.id = "rinnakkain";
+        const kappale2 = document.createElement("p");
+        kappale2.textContent = "Ensimmäinen kappale. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus impedit consequuntur inventore culpa, beatae tempora! Ensimmäinen kappale. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus impedit consequuntur inventore culpa, beatae tempora! Ensimmäinen kappale. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus impedit consequuntur inventore culpa, beatae tempora!";
+        document.getElementById("rinnakkain").appendChild(kappale2);
+
+        const kuva = document.createElement("figure");
+        kuva.id = "kuvanpaikka";
+        osa2.appendChild(kuva);
+        const img = document.createElement("img");
+        img.src = "images/giphy.gif";
+        kuva.appendChild(img);
+
+        const osa3 = document.createElement("footer");
+        runko.appendChild(osa3);
+        const kappale3 = document.createElement("p");
+        kappale3.textContent = "@ 2023 Hannika Gabrielsson";
+        osa3.appendChild(kappale3);
+
+
+       
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+html {
+    font-size: 62,5%;
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1rem;
+    width: 50%;
+}
+
+.ylatunniste{
+    border: dotted black 1px;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+}
+
+#rinnakkain{
+    padding: 1rem;
+    border-left: dotted black 1px;
+    border-right: dotted black 1px;
+}
+
+/* #kuvanpaikka{
+    padding-top: 1rem;
+} */
+
+footer{
+    border: dotted black 1px;
+    padding: 1rem;
+}
